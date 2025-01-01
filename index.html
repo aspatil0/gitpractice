@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevineTech Mobile</title>
+    <link rel="stylesheet" href="style-wide.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DevineTech</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#internship">Internship</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="home">
+            <h1 class="welcome-title">Welcome to DevineTech</h1>
+            <p class="welcome-info">
+                DevineTech is your partner in cutting-edge technology solutions. We specialize in providing top-notch services 
+                to help businesses grow and thrive in a competitive digital world. Our expertise spans across web development, 
+                digital marketing, and creative solutions. Let us transform your vision into reality!
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="services-title">Our Services</h2>
+            <p class="services-info">
+                At DevineTech, we offer a suite of tailored services:
+                <br>1. Website Building and Maintenance
+                <br>2. Digital Marketing Strategies
+                <br>3. Custom Email Signature Creation
+                <br>4. Chatbot Development and UI/UX Design
+            </p>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internship">
+            <h2 class="internship-title">Internship Opportunities</h2>
+            <p class="internship-info">
+                <b>Role and Responsibilities:</b> As an intern, you’ll work on real-world projects, collaborate with our clients, 
+                and gain expertise in the latest technologies. 
+                <br><b>What We Provide:</b>
+                <br>1. Full Practical Knowledge
+                <br>2. Three Prestigious Certificates
+                <br>3. Client Connections for Career Growth
+            </p>
+            <button>Apply Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 DevineTech | Innovating the Future</p>
+            <a href="https://your-main-website.com" target="_blank">Visit Main Website</a>
+        </div>
+        <div class="social-popup-container">
+            <div class="main-icon" id="toggle-popup">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/share.png" alt="Share">
+            </div>
+            <div class="social-icons hidden" id="social-links">
+                <a href="https://instagram.com" target="_blank" class="social-link instagram"></a>
+                <a href="https://twitter.com" target="_blank" class="social-link twitter"></a>
+                <a href="https://linkedin.com" target="_blank" class="social-link linkedin"></a>
+                <a href="https://github.com" target="_blank" class="social-link github"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>const togglePopup = document.getElementById("toggle-popup");
+        const socialLinks = document.getElementById("social-links");
+        
+        // Toggle Popup Visibility
+        togglePopup.addEventListener("click", () => {
+            // Check if the popup is visible
+            if (socialLinks.classList.contains("hidden")) {
+                // Show the popup
+                socialLinks.classList.remove("hidden");
+                socialLinks.classList.add("active");
+            } else {
+                // Hide the popup
+                socialLinks.classList.remove("active");
+                setTimeout(() => {
+                    socialLinks.classList.add("hidden");
+                }, 300); // Delay hiding after the animation
+            }
+        });
+        
+        </script>
+
+<style>/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #e6e6e6; /* Soft White */
+    background-color: #121212; /* Charcoal Black Background */
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a; /* Slightly lighter black */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #a020f0; /* Neon Purple Border */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a020f0; /* Neon Purple */
+}
+
+/* Navbar */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e6e6e6; /* Soft White */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffff; /* Bright Cyan on Hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Wide layout */
+    margin: 0 auto; /* Center content */
+}
+
+/* Welcome Section */
+.welcome-title {
+    color: #a020f0; /* Neon Purple */
+    text-align: center;
+    font-size: 36px; /* Bigger text */
+    margin-bottom: 10px;
+}
+
+.welcome-info {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Services Section */
+.services-title {
+    color: #00ffff; /* Bright Cyan */
+    text-align: center;
+    font-size: 32px; /* Bigger text */
+    margin-bottom: 10px;
+}
+
+.services-info {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #e6e6e6; /* Soft White */
+}
+
+/* Internship Section */
+.internship-title {
+    color: #a020f0; /* Neon Purple */
+    text-align: center;
+    font-size: 32px; /* Bigger text */
+    margin-bottom: 10px;
+}
+
+.internship-info {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #e6e6e6; /* Soft White */
+}
+
+/* Button */
+button {
+    display: block;
+    background-color: #00ffff; /* Bright Cyan */
+    color: #121212; /* Charcoal Black */
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #a020f0; /* Neon Purple */
+    color: #e6e6e6; /* Soft White */
+    border: 1px solid #00ffff; /* Bright Cyan Border */
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a; /* Slightly lighter black */
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #a020f0; /* Neon Purple Border */
+}
+
+footer a {
+    color: #a020f0; /* Neon Purple */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00ffff; /* Bright Cyan on Hover */
+    text-decoration: underline;
+}
+
+/* Ensure wide layout on all devices */
+@media (min-width: 768px) {
+    main {
+        max-width: 90%;
+    }
+}
+
+/* Popup Container */
+.social-popup-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    
+    /* Main Icon (Center Circle) */
+    .main-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #a020f0; /* Neon Purple */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .main-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Social Media Icons (Initially Hidden) */
+    .social-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social-icons a {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    /* Social Media Positions */
+    .instagram {
+        top: -100px;
+        background-color: #e4405f;
+        background-image: url('https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .twitter {
+        top: 50px;
+        left: -90px;
+        background-color: #1da1f2;
+        background-image: url('https://img.icons8.com/ios-filled/50/ffffff/twitter-circled.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .linkedin {
+        top: 50px;
+        left: 90px;
+        background-color: #0077b5;
+        background-image: url('https://img.icons8.com/ios-filled/50/ffffff/linkedin.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .github {
+        top: 140px;
+        background-color: #333;
+        background-image: url('https://img.icons8.com/ios-filled/50/ffffff/github.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    /* Active State for Popup */
+    .social-icons.active {
+        transform: scale(1);
+    }
+    
+    /* Hidden Class */
+    .hidden {
+        display: none;
+    }
+   
+</style>
+
+
+</body>
+</html>
